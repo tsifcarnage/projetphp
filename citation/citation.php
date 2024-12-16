@@ -7,5 +7,6 @@ $citations = [
 "L'échec est une opportunité de recommencer plus intelligemment. - Henry Ford",
 "La persévérance est la clé du succès. - Mazouz Hacène",
 "L’amour est comme le vent, on ne peut pas le voir mais on peut le sentir. – Nicholas Sparks.",
-"On peut apprendre à un ordinateur à dire : “Je t’aime”, mais on ne peut pas lui apprendre à aimer. - Albert Jacquard"
+"On peut apprendre à un ordinateur à dire : “Je t’aime”, mais on ne peut pas lui apprendre à aimer. - Albert Jacquard",
+"Le succès c'est tomber sept fois, se relever huit. - Proverbe japonais"
 ];
