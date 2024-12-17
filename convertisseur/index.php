@@ -5,6 +5,7 @@
         $convert=$_POST['convert'];
         $avantresult=before($nombre,$convert);
         $resultat=convertion($nombre,$convert);
+        $egal='<span>est égale à </span>';
         /*$resultformat=number_format($resultat,2,',','');*/
     }else{
         $nombre=null;
@@ -12,6 +13,7 @@
         $resultat=null;
         /*$resultformat=null;*/
         $avantresult=null;
+        $egal=null;
     }
 ?>
 <!DOCTYPE html>
@@ -39,7 +41,7 @@
             <input type="submit" value="Convertir">
         </form>
         <div>
-            <?= $avantresult ?><span>est égale à </span><?=$resultat?>
+            <?= $avantresult .$egal.$resultat?>
         </div>
     </section>
 </body>
