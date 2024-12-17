@@ -1,3 +1,17 @@
+<?php
+    include 'function.php';
+    if(isset($_POST['number'])&& isset($_POST['convert'])){
+        $nombre=$_POST['number'];
+        $convert=$_POST['convert'];
+        $resultat=convertion($nombre,$convert);
+        $resultformat=number_format($resultat,2,',','.');
+    }else{
+        $nombre=null;
+        $convert=null;
+        $resultat=null;
+        $resultformat=null;
+    }
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -13,7 +27,7 @@
             <input type="number" name="number" id="number">
             <label for="convert">Type de conversion:</label>
             <select id="convert">
-                <option value="kili">Kilomètres &#8594; Miles</option>
+                <option value="kimi">Kilomètres &#8594; Miles</option>
                 <option value="miki">Miles &#8594; Kilomètres </option>
                 <option value="cefa">Celsius &#8594; Farhenheit</option>
                 <option value="face">Farhenheit &#8594; Celsius</option>
@@ -22,6 +36,9 @@
             </select>
             <input type="submit" value="Convertir">
         </form>
+        <div>
+            <?=?>
+        </div>
     </section>
 </body>
 </html>
