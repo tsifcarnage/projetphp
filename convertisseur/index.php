@@ -41,7 +41,9 @@
             <input type="submit" value="Convertir">
         </form>
         <div>
-            <?= $avantresult .$egal.$resultat?>
+            <?php if (isset($avantresult) && isset($egal) && isset($resultat)): ?>
+            <?= $avantresult . $egal . $resultat ?>
+            <?php endif; ?>
         </div>
     </section>
 </body>
