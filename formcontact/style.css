@@ -21,4 +21,10 @@ section{
 }
 form{
     display: flex;
+    flex-direction: column;
+}
+input{
+    font-size: 1.6rem;
+    width: 100%;
+    height: 2rem;
 }
