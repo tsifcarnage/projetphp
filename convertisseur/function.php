@@ -1,32 +1,56 @@
 <?php
 function convertion($nbr,$type){
+    if (!is_numeric($nbr) || empty($nbr)) {
+        return "Entrée invalide !";
+    }
     if(isset($_POST['convert'])){
         $final='';
         switch($type){
             case 'kimi':
-                $final=$nbr*0.621371 . 'Miles';
-                return $final;
+                $final=$nbr*0.621371 . ' Miles ';
+                break;  
             case 'miki':
-                $final=$nbr/0.621371
-                return $nbr/0.621371;
+                $final=$nbr/0.621371 . ' Kilomètres ';
+                break;                   
             case 'cefa':
-                $final=$nbr
-                return ($nbr* 9 / 5) + 32;
+                $final=($nbr*9 / 5) + 32 . ' Fahrenheit ';
+                break;  
             case 'face':
-                $final=$nbr
-                return ($nbr- 32) * 5 / 9;
+                $final=($nbr- 32) * 5 / 9 . ' Celsius ';
+                break;  
             case 'kili':
-                $final=$nbr
-                return $nbr* 2.20462;
+                $final=$nbr* 2.20462 . ' Livres ';
+                break;  
             case 'liki':
-                $final=$nbr
-                return $nbr/ 2.20462;
+                $final=$nbr/ 2.20462 . ' Kilogrammes ';
+                break;  
+            default:
+                $final= "Type de conversion invalide ! ";
         }
+        return $final;
     }
 }
 
-function affichage($resultat,$type){
+function before($nbr,$type){
+    if (!is_numeric($nbr) || empty($nbr)) {
+        return "Entrée invalide !";
+    }
     if(isset($_POST['convert'])){
-        switch($type)
+        switch($type){
+            case 'kimi':
+                return $nbr. ' Kilomètres ';
+            case 'miki':
+                return $nbr. ' Miles ';  
+            case 'cefa':
+                return $nbr. ' Celsius ';
+            case 'face':
+                return $nbr. ' Fahrenheit ';
+            case 'kili':
+                return $nbr. ' Kilogrammes ';
+            case 'liki':
+                return $nbr. ' Livres ';
+            default:
+                return "Type de conversion invalide ! ";
+        }
     }
 }
