@@ -6,12 +6,10 @@
         $avantresult=before($nombre,$convert);
         $resultat=convertion($nombre,$convert);
         $egal='<span>est égale à </span>';
-        /*$resultformat=number_format($resultat,2,',','');*/
     }else{
         $nombre=null;
         $convert=null;
         $resultat=null;
-        /*$resultformat=null;*/
         $avantresult=null;
         $egal=null;
     }
@@ -21,6 +19,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="s">
     <title>Convertisseur</title>
 </head>
 <body>
@@ -28,7 +27,7 @@
         <h1>Convertisseur d'unité</h1>
         <form method="POST">
             <label for="number">Entrez une valeur:</label>
-            <input type="number" name="number" id="number">
+            <input type="number" name="number" id="number" required>
             <label for="convert">Type de conversion:</label>
             <select id="convert" name="convert">
                 <option value="kimi">Kilomètres &#8594; Miles</option>

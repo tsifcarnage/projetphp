@@ -1,5 +1,5 @@
 <?php
-/*function convertion($nbr,$type){
+function convertion($nbr,$type){
     if (!is_numeric($nbr) || empty($nbr)) {
         return "Entrée invalide !";
     }
@@ -7,54 +7,22 @@
         $final='';
         switch($type){
             case 'kimi':
-                $final=$nbr*0.621371 . ' Miles ';
+                $final=number_format(($nbr*0.621371),2,',','.') . ' Miles ';
                 break;  
             case 'miki':
-                $final=$nbr/0.621371 . ' Kilomètres ';
+                $final=number_format(($nbr/0.621371),2,',','.') . ' Kilomètres ';
                 break;                   
             case 'cefa':
-                $final=($nbr*9 / 5) + 32 . ' Fahrenheit ';
+                $final=number_format((($nbr*9 / 5) + 32 ),2,',','.'). ' Fahrenheit ';
                 break;  
             case 'face':
-                $final=($nbr- 32) * 5 / 9 . ' Celsius ';
+                $final=number_format((($nbr- 32) * 5 / 9),2,',','.') . ' Celsius ';
                 break;  
             case 'kili':
-                $final=$nbr* 2.20462 . ' Livres ';
+                $final=number_format(($nbr* 2.20462),2,',','.') . ' Livres ';
                 break;  
             case 'liki':
-                $final=$nbr/ 2.20462 . ' Kilogrammes ';
-                break;  
-            default:
-                $final= "Type de conversion invalide ! ";
-        }
-        return $final;
-    }
-}*/
-
-function convertform($nbr,$type){
-    if (!is_numeric($nbr) || empty($nbr)) {
-        return "Entrée invalide !";
-    }
-    if(isset($_POST['convert'])){
-        $final='';
-        switch($type){
-            case 'kimi':
-                $final=$nbr*0.621371;
-                break;  
-            case 'miki':
-                $final=$nbr/0.621371;
-                break;                   
-            case 'cefa':
-                $final=($nbr*9 / 5) + 32;
-                break;  
-            case 'face':
-                $final=($nbr- 32) * 5 / 9;
-                break;  
-            case 'kili':
-                $final=$nbr* 2.20462;
-                break;  
-            case 'liki':
-                $final=$nbr/ 2.20462;
+                $final=number_format(($nbr/ 2.20462),2,',','.') . ' Kilogrammes ';
                 break;  
             default:
                 $final= "Type de conversion invalide ! ";
@@ -62,7 +30,6 @@ function convertform($nbr,$type){
         return $final;
     }
 }
-
 function before($nbr,$type){
     if (!is_numeric($nbr) || empty($nbr)) {
         return "Entrée invalide !";
