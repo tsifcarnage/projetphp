@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62,5%;
+}
+body{
+    background-color: black;
+    color: aliceblue;
+}
+.bloc,
+.bloc2,
+.bloc3{
+    width: 33%;
+}
+section{
+    display: flex;
+    font-size: 1.6rem;
+}
+form{
+    display: flex;
+}
