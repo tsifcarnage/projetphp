@@ -1,7 +1,7 @@
 <?php
     $name=isset($_POST['name']) && !empty($_POST['name'])?$_POST['name']:'';
     $premess=isset($_POST['name']) && !empty($_POST['name'])?'Merci ':'';
-    $message=isset($_POST['name']) && !empty($_POST['name'])?'.Ton message a ete bien ete envoyer':'';
+    $message=isset($_POST['name']) && !empty($_POST['name'])?'. Ton message a été bien envoyer.':'';
 ?>
 <!DOCTYPE html>
 <html lang="en">
