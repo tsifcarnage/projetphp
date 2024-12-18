@@ -1,6 +1,6 @@
 <?php 
     require 'formulaire.php';
-    require 'articles.php'
+    require 'articles.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
