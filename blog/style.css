@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 65, 5%;
+}
+body {
+  color: aliceblue;
+  background-color: black;
+}
+.bloc,
+.bloc2,
+.bloc3 {
+  width: 33%;
+  margin-top: 5%;
+}
+section {
+  display: flex;
+  font-size: 1.6rem;
+}
+h1 {
+  color: red;
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 5rem;
+}
+p {
+  margin: 1rem 0;
+}
