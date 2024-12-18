@@ -23,7 +23,7 @@ foreach ($articles as $article) {
 } 
 
 $string .=  '<button type="submit" class="btn btn-outline-primary" name="ajouter" value="">Ajouter au panier</button>';
-$string .=  ' <a class="btn btn-outline-secondary" href="05.panier.php">Reload</a>';
+$string .=  ' <a class="btn btn-outline-secondary" href="index.php">Reload</a>';
 $string .=  '</form>';
 
 return $string;
