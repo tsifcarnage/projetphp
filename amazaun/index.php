@@ -1,19 +1,29 @@
 <?php 
-    include 'article.php';
-    $articles = [
-        ["nom" => "Nike Air AF1", "prix" => 110, "photo" => "af1.png"],
-        ["nom" => "T-shirt", "prix" => 29, "photo" => "t-shirt.png"],    
-        ["nom" => "Pantalon", "prix" => 95, "photo" => "pantalon.png"]
-    ];
+    require 'formulaire.php';
+    require 'articles.php'
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Amazaun</title>
 </head>
 <body>
-    <?=getFormulaire($articles)?>
+    <div class="bloc2">
+        <div>
+            <?=getFormulaire($articles)?>
+        </div>
+        <div>
+            <form action="" method="POST">
+                <h1>Votre Panier:</h1>
+            </form>
+        </div>
+        
+    </div>
+    
+
+    
 </body>
 </html>

@@ -11,7 +11,7 @@ foreach ($articles as $article) {
     $string .= '<div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 5px;">';
     $string .= '<h4>' . $article['nom'] . ' <br> <small><em>' . $article['prix']. ' €</em></small></h4>'; 
     $string .= '<div class="mb-3">'; 
-    $string .= '<img src="img/'.$article['photo'].'" alt="'.$article['nom'].'" class="rounded">';        
+    $string .= '<img src="img/img'.$article['photo'].'" alt="'.$article['nom'].'" class="rounded">';        
     $string .= '</div>';          
     $string .= '<div>';       
     $string .= '<label class="form-label" for="quantite_'.$nom_article.'">Quantité :</label>';        
