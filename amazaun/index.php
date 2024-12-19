@@ -1,8 +1,7 @@
 <?php
-require 'formulaire.php'; // Charge la fonction getFormulaire
-require 'articles.php'; // Charge le tableau des articles
+require 'formulaire.php'; 
+require 'articles.php'; 
 
-// Initialisation des quantités pour chaque article
 $quantite = [
     "Nike Air AF1" => $_POST['quantite_Nike_Air_AF1'] ?? 0,
     "T-shirt" => $_POST['quantite_T-shirt'] ?? 0,
@@ -16,21 +15,26 @@ $quantite = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Amazaun</title>
+    <title>Amazaune</title>
 </head>
 <body>
-    <div class="bloc2">
-        <!-- Formulaire pour sélectionner les articles -->
-        <div>
-            <?= getFormulaire($articles) ?>
-        </div>
-        <!-- Section pour afficher le panier -->
-        <div>
-            <h1>Votre Panier :</h1>
+    <h1>Ama<span class="blue">zaune</span></h1>
+    <hr>
+    <section>
+        <div class="bloc1"></div>
+        <div class="bloc2">
             <div>
-                <?php require 'panier.php'?>
+                <?= getFormulaire($articles) ?>
+            </div>
+            <!-- Section pour afficher le panier -->
+            <div>
+                <h1>Votre Panier :</h1>
+                <div>
+                    <?php require 'panier.php'?>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="bloc3"></div>
+    </section>
 </body>
 </html>
