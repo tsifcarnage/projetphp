@@ -1,5 +1,12 @@
-
-/* .bloc2{
-    display: flex;
-    gap:5px;
-} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 65.5%;
+}
+body{
+    background-color: black;
+    color:aliceblue;
+}
