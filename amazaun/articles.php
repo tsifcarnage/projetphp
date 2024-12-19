@@ -4,3 +4,5 @@ $articles = [
     ["nom" => "T-shirt", "prix" => 29, "photo" => "/t-shirt.png"],    
     ["nom" => "Pantalon", "prix" => 95, "photo" => "/pantalon.png"]
 ];
+
+
