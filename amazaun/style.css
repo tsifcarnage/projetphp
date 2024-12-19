@@ -32,6 +32,9 @@ ul{
   color: red;
   font-size: 6rem;
 }
+.formulaire{
+  width: 100%;
+}
 .bluetitle{
   color:rgb(0, 166, 255);
 }

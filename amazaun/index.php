@@ -23,7 +23,7 @@ $quantite = [
     <section>
         <div class="bloc1"></div>
         <div class="bloc2">
-            <div>
+            <div class="formulaire">
                 <h1>Article disponibles:</h1>
                 <?= getFormulaire($articles) ?>
             </div>
