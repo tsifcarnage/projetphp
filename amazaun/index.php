@@ -18,7 +18,7 @@ $quantite = [
     <title>Amazaune</title>
 </head>
 <body>
-    <h1 class="titre">Ama<span class="blue">zaune</span></h1>
+    <h1 class="titre">Ama<span class="bluetitle">zaune</span></h1>
     <hr>
     <section>
         <div class="bloc1"></div>
