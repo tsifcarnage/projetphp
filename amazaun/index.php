@@ -18,12 +18,13 @@ $quantite = [
     <title>Amazaune</title>
 </head>
 <body>
-    <h1>Ama<span class="blue">zaune</span></h1>
+    <h1 class="titre">Ama<span class="blue">zaune</span></h1>
     <hr>
     <section>
         <div class="bloc1"></div>
         <div class="bloc2">
             <div>
+                <h1>Article disponibles:</h1>
                 <?= getFormulaire($articles) ?>
             </div>
             <!-- Section pour afficher le panier -->

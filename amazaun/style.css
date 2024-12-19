@@ -10,3 +10,21 @@ body {
   background-color: black;
   color: aliceblue;
 }
+.titre{
+  text-align: center;
+  color: red;
+  font-size: 6rem;
+}
+.blue{
+  color:rgb(0, 166, 255);
+}
+hr{
+  margin: 1rem;
+}
+section{
+  font-size: 2.6rem;
+}
+.bloc2{
+  display: flex;
+  flex-direction: column;
+}
