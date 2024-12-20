@@ -35,6 +35,9 @@ ul{
 .formulaire{
   width: 100%;
 }
+.panier{
+  width: 80%;
+}
 .bluetitle{
   color:rgb(0, 166, 255);
 }
@@ -54,4 +57,44 @@ input{
   height: 3rem;
   font-size: 1.8rem;
   border-radius: 0.5rem;
+}
+button{
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+button:hover{
+  background-color: red;
+  border: 1px solid black;
+  color: black;
+  font-weight:bold;
+  padding: 1rem;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+a{
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+a:hover{
+  background-color: red;
+  border: 1px solid black;
+  color: black;
+  font-weight:bold;
+  padding: 1rem;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.quantit{
+  color: red;
+  font-style: italic;
 }

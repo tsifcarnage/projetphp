@@ -8,7 +8,7 @@ if (array_sum($quantite) > 0) {//Arraysum permet de calculer la total du quantit
         if ($quantite_article > 0) {                           
             $total += $prix * $quantite_article; // Calcule le total
             echo '<ul>';
-            echo '<li>'.$nom . ' (' . $prix . ' €)' .'<span> x ' . $quantite_article .'</span> = '. $total . ' €</li>';
+            echo '<li>'.$nom . ' (' . $prix . ' €)' .'<span class="quantit"> x ' . $quantite_article .'</span> = '. $total . ' €</li>';
             echo '</ul>';
         }
     }

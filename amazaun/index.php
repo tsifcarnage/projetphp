@@ -28,7 +28,7 @@ $quantite = [
                 <?= getFormulaire($articles) ?>
             </div>
             <!-- Section pour afficher le panier -->
-            <div>
+            <div class="panier">
                 <h1>Votre Panier :</h1>
                 <div>
                     <?php require 'panier.php'?>
