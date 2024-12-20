@@ -29,7 +29,7 @@
             <h1>Convertisseur d'unité by Tsif</h1>
             <form method="POST">
                 <label for="number">Entrez une valeur:</label>
-                <input type="number" name="number" id="number" required>
+                <input type="number" name="number" id="number" step="any" required>
                 <label for="convert">Type de conversion:</label>
                 <select id="convert" name="convert">
                     <option value="kimi">Kilomètres &#8594; Miles</option>
